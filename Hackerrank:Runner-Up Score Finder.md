@@ -19,9 +19,30 @@ To write a Python program that takes a list of scores from participants and find
 ---
 
 ## 💻 PROGRAM:
+```
+def find_runner_up(scores):
+   
+    unique_scores = set(scores)
+    sorted_scores = sorted(unique_scores, reverse=True)
 
-ADD CODE HERE
+    if len(sorted_scores) > 1:
+        return sorted_scores[1]
+    else:
+        return None  # Return None if there is no runner-up
 
-## OUTPUT
+scores = [45, 67, 89, 89, 91, 67, 72, 91]
 
-## RESULT
+runner_up = find_runner_up(scores)
+
+if runner_up is not None:
+    print(f"The runner-up score is: {runner_up}")
+else:
+    print("There is no runner-up score.")
+```
+## OUTPUT:
+```
+           Input                                              Result
+ [45, 67, 89, 89, 91, 67, 72, 91]                [45, 67, 89, 89, 91, 67, 72, 91]
+````
+## RESULT:
+The program was successful.
