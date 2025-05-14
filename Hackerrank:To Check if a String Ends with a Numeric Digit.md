@@ -37,6 +37,6 @@ else:
    Input                            Result
 
  'Hello123'                  The string 'Hello123' ends with a number.
-
-
-## Result
+```
+## Result:
+The program was successful.
