@@ -26,11 +26,35 @@ To write a Python program to:
 ---
 
 ## 💻  Program
+```
+students = [
+    ("Alice", 85),
+    ("Bob", 75),
+    ("Charlie", 90),
+    ("David", 75),
+    ("Eva", 80),
+    ("Frank", 85)
+]
+grades = [grade for name, grade in students]
+unique_grades = sorted(set(grades))  # Remove duplicates and sort the grades
+second_lowest_grade = unique_grades[1]  
+students_with_second_lowest = [name for name, grade in students if grade == second_lowest_grade]
+students_with_second_lowest.sort()
+print("Students with the second lowest grade:")
+for student in students_with_second_lowest:
+    print(student)
 
-Add Code Here
-
-## Output
-
-## Result
-
+```
+## Output:
+```
+Input                                Result
+ [("Alice", 85),
+    ("Bob", 75),
+    ("Charlie", 90),              [("Alice", 85), ("Bob", 75), ("Charlie", 90), ("David", 75), ("Eva", 80), ("Frank", 85)]
+    ("David", 75),
+    ("Eva", 80),
+    ("Frank", 85)]
+```
+## Result:
+The program was successful.
 
